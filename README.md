@@ -1,7 +1,7 @@
 # HGNC-Search
 
 
-### [<img src="gene_search.png" width="25px" /> Download](https://github.com/danielecook/HGNC-Search/releases/latest)
+### [<img src="gene_search.png" width="25px" /> Download the latest release](https://github.com/danielecook/HGNC-Search/releases/latest)
 
 Search human genes and get information on them instantly.
 
