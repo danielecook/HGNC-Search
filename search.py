@@ -6,6 +6,7 @@ import sys
 from workflow import Workflow, ICON_WEB, web
 import sqlite3
 import urllib2
+import difflib
 
 log = None
 
@@ -17,7 +18,6 @@ resolve_url = {"hgnc_id": "http://www.genenames.org/cgi-bin/gene_symbol_report?h
 
 def main(wf):
     args = wf.args[0]
-    #wf.add_item(row[1],row[0], arg=wormbase_url, valid=True, icon="icon.png")
     conn = sqlite3.connect('gene.db')
     # Use dictionary cursor
     conn.row_factory = sqlite3.Row
@@ -28,6 +28,8 @@ def main(wf):
     if args in [x["symbol"] for x in rows]:
         rows = [x for x in rows if x["symbol"] == args]
     if len(rows) > 1:
+        # Sort rows by best match
+        rows = sorted(rows, key=lambda x: difflib.SequenceMatcher(None, x["symbol"], args).ratio(), reverse=True)
         for row in rows:
             wf.add_item(row["symbol"], row["name"], arg=row["symbol"], autocomplete = row["symbol"], valid=False, icon="gene_search.png")
     if len(rows) == 1:
