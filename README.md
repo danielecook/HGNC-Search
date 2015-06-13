@@ -1,7 +1,9 @@
 # HGNC-Search
 
 
-### <img src="gene_search.png" width="25px" /> Search human genes and get information on them instantly.
+### [<img src="gene_search.png" width="25px" /> Download](https://github.com/danielecook/HGNC-Search/releases/download/v0.1/HGNC-Search.alfredworkflow)
+
+Search human genes and get information on them instantly.
 
 ## Usage
 
