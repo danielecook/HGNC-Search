@@ -15,6 +15,15 @@ __Information and links are provided for individual genes__
 
 ![individual gene](img/d2.png)
 
+__Resolve gene identifiers (ucsc, entrez, vega, ensemble, etc.)__
+
+![individual gene](img/d3.png)
+
+__Search by keyword__
+
+![individual gene](img/d4.png)
+
+
 ## Feedback
 
 Please provide feedback. Specifically:
