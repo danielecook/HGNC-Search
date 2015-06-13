@@ -1,11 +1,21 @@
 # HGNC-Search
 
-![Gene Search](gene_search.png) Search human genes and get information on them instantly.
+
+### <img src="gene_search.png" width="25px" /> Search human genes and get information on them instantly.
 
 ## Usage
 
+__Full text search of the HGNC database__
 
+![search for genes](img/d1.png)
 
+__Information and links are provided for individual genes__
 
-=======
-Search for human genes and fetch information on them
+![individual gene](img/d2.png)
+
+## Feedback
+
+Please provide feedback. Specifically:
+
+* What other gene IDs would be useful
+* What other sites would you like to be able to navigate to.
